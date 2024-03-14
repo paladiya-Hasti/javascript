@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hasti</title>
+
+    <style>
+        #data{
+            background-color:rgb(169, 192, 206);
+            height: 85%;
+            width: 650px;
+            padding: 10px;
+        }
+        #h1{
+            color: black;
+        }
+        #name{
+            width: 85%;
+            padding: 10px;
+            margin: 10px;
+        }
+        #job{
+            width:90%;
+            padding: 10px;
+            margin: 10px;   
+        }
+        #eng{
+            width: 90%;
+            padding: 10px;
+            margin: 10px;
+        }    #salary{
+            width: 85%;
+            padding: 10px;
+            margin: 10px;
+        }
+        #exp{
+            width: 85%;
+            padding: 10px;
+            margin: 10px;
+        }
+        #email{
+            width: 85%;
+            padding: 10px;
+            margin: 10px;
+        }
+        #add{
+            width: 90%;
+            padding: 10px;
+            margin: 10px;
+        }
+        #tab{
+            background-color: rgba(157, 213, 240, 0.829);
+        }
+        #head{
+            background-color: rgb(161, 201, 228);
+        }
+        #del{
+            background-color: rgb(235, 49, 49);
+        }
+    </style>
+
+</head>
+<body>
+
+    <center>
+        <form id="data" >
+            <h1>Hire a new Emploee</h1>
+            <input type="text" placeholder="name" id="name" required><br>
+            <select name="text" id="job"><br>
+                <option value="SDE-2">SDE-2</option>
+                <option value="SDE-1">SDE-1</option>
+                <option value="HR manger">HR manger</option>
+            </select><br>
+            <select name="text" id="eng">
+                <option value="eng">Engineering-1</option>
+                <option value="eng">Engineering-2</option>
+                <option value="HR manger">HR manger</option>
+            </select><br>
+            <input type="number" placeholder="salary" id="salary" required><br>
+            <input type="number" placeholder="experince" id="exp" required><br>
+            <input type="text" placeholder="email" id="email"required><br>
+            <input type="submit" value="add" id="add">
+        </form>
+        <table border="1px solid black" id="head">
+            <thead>
+                <tr id="tab">
+                    <th id="name">Emploee name</th>
+                    <th>job role</th>
+                    <th>Deparment</th>
+                    <th>salary</th>
+                    <th>experince</th>
+                    <th>email</th>
+                    <th>role type</th>
+                    <th id="del">delete </th>
+                </tr>
+            </thead>
+               <tbody id="tbody"></tbody>
+        </table>
+    </center>
+   
+</body>
+    <script src="index.js"></script>
+</html>
